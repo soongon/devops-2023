@@ -53,7 +53,7 @@ EKS 공식문서 확인
    # example:
    eksctl create cluster --name kitri  \
    --region ap-northeast-2 \
-   --node-type t2.small \
+   --node-type t2.small
     ```
 
 5. EKS 클러스터 삭제 
@@ -82,7 +82,7 @@ EKS 공식문서 확인
    ```sh
    kubectl expose deployment demo-nginx --port=80 --type=LoadBalancer
 
-   kubectl get all (pod, service, deploy, replicaset) -o wide`
+   kubectl get all (pod, service, deploy, replicaset) -o wide
    ```
 1. 디플로이먼트 삭제.
    ```sh

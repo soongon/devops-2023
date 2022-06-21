@@ -1,0 +1,7 @@
+---
+- hosts: kubernetes_server
+  user: root
+
+  tasks:
+    - name: deploy custapp on kubernetes
+      command: kubectl apply -f custapp-service.yml

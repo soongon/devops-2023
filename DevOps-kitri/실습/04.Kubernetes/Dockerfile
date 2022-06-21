@@ -1,4 +1,3 @@
 FROM tomcat:latest
-
-COPY ./webapp.war /usr/local/tomcat/webapps
-
+RUN mkdir /usr/local/tomcat/webapps-javaee
+COPY ./*.war /usr/local/tomcat/webapps-javaee
