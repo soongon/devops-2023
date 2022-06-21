@@ -72,7 +72,7 @@ Ansible 은 오픈소스 자동화 플랫폼이다. 매우 심플하고 강력�
 
 ## Ansible 컨트롤 노드에 설정할 내용
 
-1. /etc/ansible 디렉토리 생성,  "hosts" 라는 인벤토리 파일 생성, add control node and managed hosts IP addresses to it. 
+1. /etc/ansible 디렉토리에, "hosts" 라는 인벤토리 파일 생성, managed hosts IP addresses 추가. 
 
 1. 생성한 키를 ansible managed host(도커 호스트)에 복사
    ```sh 
@@ -84,4 +84,5 @@ Ansible 은 오픈소스 자동화 플랫폼이다. 매우 심플하고 강력�
 1. ansadmin 유저로 ansible 명령 실행.
    ```sh 
    ansible all -m ping
+   ansible all -m command -a uptime
    ```
