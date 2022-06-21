@@ -8,6 +8,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home() {
-        return "소스를 수정하고 커밋을 쳤어요..2222222222 hello world";
+        return "CI/CD 도커를 이용해서 했습니다.";
     }
 }
